@@ -7,9 +7,9 @@ function cmp($a, $b)
     $bTmp=strlen($b);
    
 
-    if ($aTmp == $bTmp) {
+    if ($aTmp == $bTmp) {   //If strings have same lenghts
 
-        for($i=0;$i<$aTmp;$i++)
+        for($i=0;$i<$aTmp;$i++) //Compare every char
         {	
 
         	$aTmp2 = intval($a[$i]);
@@ -30,7 +30,7 @@ function cmp($a, $b)
 
 function bigSorting($unsorted) {
   
-     usort($unsorted,"cmp");
+     usort($unsorted,"cmp"); //Compare strings by their lenghts;
      return $unsorted;
     
 }
